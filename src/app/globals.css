@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+/*
+ * ChairFill: the Viewbox world.
+ * A lit radiograph panel. Booked chair-time is dense and bright; freed time is a
+ * radiolucent void, dark and hatched. One density ramp is the only tonal scale.
+ * Amber (safelight) marks live offers only. Restoration teal marks recovered time.
+ */
+
+:root {
+  /* density ramp: radiolucent -> radiopaque */
+  --d0: #0f1c24;
+  --d1: #192a33;
+  --d2: #2a3d48;
+  --d3: #435a67;
+  --d4: #6a8393;
+  --d5: #95abb8;
+  --d6: #bfcfd8;
+  --d7: #dde7ec;
+  --d8: #f7fafb;
+
+  --panel: #eaf0f3; /* the lit ground */
+  --panel-2: #e0e8ec; /* second neutral layer */
+  --surface: #f7fafb;
+  --ink: #102029;
+  --ink-2: #344b58;
+  --ink-3: #536b79;
+  --on-dark: #dde7ec;
+  --on-dark-2: #9fb3bf;
+  --rule: #cad7de;
+  --rule-strong: #a7bac4;
+
+  --mount: #0f1c24; /* film-mount chrome */
+  --mount-2: #192a33;
+
+  --amber: #d98e2b; /* safelight: live offer awaiting reply */
+  --amber-ink: #8a520d;
+  --amber-wash: #f6e7cf;
+
+  --restore: #0d7565; /* recovered time */
+  --restore-bright: #2fb39b;
+  --restore-wash: #dcf0eb;
+
+  --danger: #b4372f;
+  --danger-wash: #f6dfdc;
+
+  --r: 6px;
+  --r-sm: 3px;
+  --shadow-lift: 0 1px 2px rgb(15 28 36 / 0.08), 0 8px 24px -12px rgb(15 28 36 / 0.28);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@theme inline {
+  --color-d0: var(--d0);
+  --color-d1: var(--d1);
+  --color-d2: var(--d2);
+  --color-d3: var(--d3);
+  --color-d4: var(--d4);
+  --color-d5: var(--d5);
+  --color-d6: var(--d6);
+  --color-d7: var(--d7);
+  --color-d8: var(--d8);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-on-dark: var(--on-dark);
+  --color-on-dark-2: var(--on-dark-2);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-mount: var(--mount);
+  --color-mount-2: var(--mount-2);
+  --color-amber: var(--amber);
+  --color-amber-ink: var(--amber-ink);
+  --color-amber-wash: var(--amber-wash);
+  --color-restore: var(--restore);
+  --color-restore-bright: var(--restore-bright);
+  --color-restore-wash: var(--restore-wash);
+  --color-danger: var(--danger);
+  --color-danger-wash: var(--danger-wash);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --radius-cf: var(--r);
+  --radius-cf-sm: var(--r-sm);
+  --shadow-lift: var(--shadow-lift);
+  --ease-out-expo: var(--ease-out);
+}
+
+html {
+  color-scheme: light;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--panel);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  caret-color: var(--ink);
+}
+
+::selection {
+  background: var(--d3);
+  color: var(--d8);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--d5) transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+
+.on-mount :focus-visible,
+.void :focus-visible {
+  outline-color: var(--d7);
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* ---------------------------------------------------------------- film states */
+
+/* Open chair-time: a radiolucent void with diagonal hatch. Never colour alone. */
+.void {
+  background-color: var(--d1);
+  background-image: repeating-linear-gradient(135deg, transparent 0 6px, rgb(221 231 236 / 0.11) 6px 7px);
+  color: var(--on-dark);
+}
+
+/* Live offer: the same void under safelight. */
+.void-live {
+  background-color: var(--d1);
+  background-image: repeating-linear-gradient(135deg, transparent 0 6px, rgb(217 142 43 / 0.28) 6px 7px);
+  color: var(--on-dark);
+  box-shadow: inset 0 0 0 1.5px var(--amber);
+}
+
+/* Held: the void outlined but held back, dotted. */
+.void-held {
+  background-color: var(--d2);
+  background-image: radial-gradient(rgb(221 231 236 / 0.16) 1px, transparent 1.2px);
+  background-size: 6px 6px;
+  color: var(--on-dark);
+  outline: 1.5px dashed var(--d5);
+  outline-offset: -3px;
+}
+
+/* Lost: past void, cross-hatched. */
+.void-lost {
+  background-color: var(--d0);
+  background-image:
+    repeating-linear-gradient(135deg, transparent 0 5px, rgb(221 231 236 / 0.08) 5px 6px),
+    repeating-linear-gradient(45deg, transparent 0 5px, rgb(221 231 236 / 0.08) 5px 6px);
+  color: var(--on-dark-2);
+}
+
+/* Booked: dense film. */
+.film {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--rule);
+}
+
+.film-past {
+  background: var(--d7);
+  color: var(--ink-2);
+  box-shadow: inset 0 0 0 1px var(--rule);
+}
+
+/* Restoration: recovered time, radiopaque with a crisp edge. */
+.restored {
+  background: #fdfefe;
+  color: var(--ink);
+  box-shadow:
+    inset 0 0 0 1.5px var(--restore),
+    inset 4px 0 0 0 var(--restore);
+}
+
+/* A miniature legend swatch. */
+.swatch {
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  border-radius: 2px;
+  flex: none;
+}
+
+/* ---------------------------------------------------------------- grid armature */
+
+.book-grid {
+  --row: 15px; /* height of one 15-minute cell */
+  background-image:
+    linear-gradient(to bottom, var(--rule) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(167 186 196 / 0.28) 1px, transparent 1px);
+  background-size:
+    100% calc(var(--row) * 4),
+    100% var(--row);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pulse-amber {
+    animation: pulse-amber 2.4s var(--ease-out) infinite;
+  }
+  @keyframes pulse-amber {
+    0%,
+    100% {
+      box-shadow: inset 0 0 0 1.5px var(--amber);
+    }
+    50% {
+      box-shadow: inset 0 0 0 1.5px var(--amber), 0 0 0 3px rgb(217 142 43 / 0.25);
+    }
+  }
+}

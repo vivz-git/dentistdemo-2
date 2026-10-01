@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-01T21:30:00+05:30",
+  "title": "Design System: ChairFill",
+  "extensions": {
+    "colorMeta": {
+      "d0": { "role": "neutral", "displayName": "Radiolucent Film", "tonalRamp": ["#0f1c24", "#192a33", "#2a3d48", "#435a67", "#6a8393", "#95abb8", "#bfcfd8", "#f7fafb"] },
+      "d1": { "role": "neutral", "displayName": "Void Ground", "tonalRamp": ["#0f1c24", "#192a33", "#2a3d48", "#435a67", "#6a8393", "#95abb8", "#bfcfd8", "#f7fafb"] },
+      "d2": { "role": "neutral", "displayName": "Held Void / Active Mount", "tonalRamp": ["#0f1c24", "#192a33", "#2a3d48", "#435a67", "#6a8393", "#95abb8", "#bfcfd8", "#f7fafb"] },
+      "d3": { "role": "neutral", "displayName": "Mid Density", "tonalRamp": ["#0f1c24", "#192a33", "#2a3d48", "#435a67", "#6a8393", "#95abb8", "#bfcfd8", "#f7fafb"] },
+      "d4": { "role": "neutral", "displayName": "Partial Fit", "tonalRamp": ["#0f1c24", "#192a33", "#2a3d48", "#435a67", "#6a8393", "#95abb8", "#bfcfd8", "#f7fafb"] },
+      "d5": { "role": "neutral", "displayName": "Disabled Density", "tonalRamp": ["#0f1c24", "#192a33", "#2a3d48", "#435a67", "#6a8393", "#95abb8", "#bfcfd8", "#f7fafb"] },
+      "d6": { "role": "neutral", "displayName": "Faint Film", "tonalRamp": ["#0f1c24", "#192a33", "#2a3d48", "#435a67", "#6a8393", "#95abb8", "#bfcfd8", "#f7fafb"] },
+      "d7": { "role": "neutral", "displayName": "Past Film", "tonalRamp": ["#0f1c24", "#192a33", "#2a3d48", "#435a67", "#6a8393", "#95abb8", "#bfcfd8", "#f7fafb"] },
+      "d8": { "role": "neutral", "displayName": "Radiopaque Film", "tonalRamp": ["#0f1c24", "#192a33", "#2a3d48", "#435a67", "#6a8393", "#95abb8", "#bfcfd8", "#f7fafb"] },
+      "panel": { "role": "neutral", "displayName": "Lit Panel" },
+      "panel-2": { "role": "neutral", "displayName": "Panel Trough" },
+      "surface": { "role": "neutral", "displayName": "Film Surface" },
+      "restored-film": { "role": "neutral", "displayName": "Restored White" },
+      "ink": { "role": "primary", "displayName": "Developer Ink", "canonical": "oklch(23.4% 0.028 234)", "tonalRamp": ["#0a1318", "#1b2b35", "#34454f", "#546671", "#768995", "#9baeba", "#cbd2d6", "#e8f0f4"] },
+      "ink-2": { "role": "neutral", "displayName": "Secondary Ink" },
+      "ink-3": { "role": "neutral", "displayName": "Tertiary Ink" },
+      "on-dark": { "role": "neutral", "displayName": "Text on Mount" },
+      "on-dark-2": { "role": "neutral", "displayName": "Muted Text on Mount" },
+      "rule": { "role": "neutral", "displayName": "Hairline" },
+      "rule-strong": { "role": "neutral", "displayName": "Strong Hairline" },
+      "mount": { "role": "primary", "displayName": "Film-Mount Blue-Black", "tonalRamp": ["#0f1c24", "#192a33", "#2a3d48", "#435a67", "#6a8393", "#95abb8", "#bfcfd8", "#f7fafb"] },
+      "mount-2": { "role": "primary", "displayName": "Mount Hover" },
+      "amber": { "role": "secondary", "displayName": "Safelight Amber", "canonical": "oklch(70.7% 0.140 68)", "tonalRamp": ["#270500", "#510c00", "#702c00", "#954f00", "#bc7300", "#e49838", "#e7ccaf", "#ffe9cc"] },
+      "amber-ink": { "role": "secondary", "displayName": "Safelight Ink" },
+      "amber-wash": { "role": "secondary", "displayName": "Safelight Wash" },
+      "restore": { "role": "tertiary", "displayName": "Restoration Teal", "canonical": "oklch(50.5% 0.090 178)", "tonalRamp": ["#001912", "#003629", "#005143", "#097464", "#3e9887", "#66beab", "#bcd8d1", "#d9f6ef"] },
+      "restore-bright": { "role": "tertiary", "displayName": "Restoration Teal on Mount" },
+      "restore-wash": { "role": "tertiary", "displayName": "Restoration Wash" },
+      "danger": { "role": "neutral", "displayName": "Error Red", "canonical": "oklch(52.1% 0.163 27)", "tonalRamp": ["#310000", "#620000", "#840000", "#ad3029", "#d6574c", "#ff7d6f", "#f4c4bd", "#ffe1da"] },
+      "danger-wash": { "role": "neutral", "displayName": "Error Wash" }
+    },
+    "typographyMeta": {
+      "headline": { "displayName": "Headline", "purpose": "One per view: page title, focused slot time range, focused patient name." },
+      "title": { "displayName": "Title", "purpose": "Section and panel headings, chair names, patient names in lists." },
+      "body": { "displayName": "Body", "purpose": "Definitions, panel copy, button labels (at 500)." },
+      "body-sm": { "displayName": "Body Small", "purpose": "Sub-lines, reasons, help text, legend, table cells." },
+      "label": { "displayName": "Label", "purpose": "Field labels and fieldset legends." },
+      "micro": { "displayName": "Micro", "purpose": "Status chips, Demo data badge, grid captions, footer sub-lines." },
+      "readout": { "displayName": "Readout", "purpose": "Recovery strip values; tabular mono." },
+      "data": { "displayName": "Data", "purpose": "Times, durations, minutes, money, scores, relative times; tabular mono." }
+    },
+    "shadows": [
+      { "name": "lift", "value": "0 1px 2px rgb(15 28 36 / 0.08), 0 8px 24px -12px rgb(15 28 36 / 0.28)", "purpose": "Floating layers only: toasts, patient phone sheet, hover on a booked film block." },
+      { "name": "hairline-inset", "value": "inset 0 0 0 1px var(--rule)", "purpose": "Default edge for panels, strips, booked film and the book container." },
+      { "name": "safelight-edge", "value": "inset 0 0 0 1.5px var(--amber)", "purpose": "Live offer void edge and current loop node during an offer." },
+      { "name": "restore-edge", "value": "inset 0 0 0 1.5px var(--restore), inset 4px 0 0 0 var(--restore)", "purpose": "Recovered film block: crisp teal edge plus left bar." },
+      { "name": "safelight-pulse", "value": "0 0 0 3px rgb(217 142 43 / 0.25)", "purpose": "Peak of the 2.4s pulse on a live offer void; only with motion allowed." }
+    ],
+    "motion": [
+      { "name": "ease-out-expo", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The single easing for every entrance and state change." },
+      { "name": "control", "value": "150ms", "purpose": "Button background, colour and 1px press transform." },
+      { "name": "dim", "value": "200ms", "purpose": "Sibling dimming to 60% when a block is selected." },
+      { "name": "toast", "value": "220ms", "purpose": "Toast enter (12px rise) and exit." },
+      { "name": "phone-sheet", "value": "280ms", "purpose": "Patient phone sheet entrance." },
+      { "name": "readout-tick", "value": "500ms", "purpose": "Readout value fade-and-rise when a number changes." },
+      { "name": "restore-reveal", "value": "900ms", "purpose": "Restored block revealing over the void it fills." },
+      { "name": "safelight-pulse", "value": "2400ms infinite", "purpose": "Live offer outline pulse; disabled under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ],
+    "patterns": {
+      "void-hatch": "repeating-linear-gradient(135deg, transparent 0 6px, rgb(221 231 236 / 0.11) 6px 7px) on d1",
+      "void-live-hatch": "repeating-linear-gradient(135deg, transparent 0 6px, rgb(217 142 43 / 0.28) 6px 7px) on d1",
+      "void-held-dots": "radial-gradient(rgb(221 231 236 / 0.16) 1px, transparent 1.2px) at 6px 6px on d2, outline 1.5px dashed d5 inset 3px",
+      "void-lost-crosshatch": "135deg and 45deg repeating lines, 1px every 6px at 8% d7, on d0",
+      "book-grid": "hour hairline in rule every 60px, quarter-hour hairline in rule-strong at 28% every 15px"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one main action in a region: Review offer, Send offer, Sign in.",
+      "html": "<button class=\"ds-btn-primary\">Review offer for 3 patients</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 16px; border: 0; border-radius: 6px; background: #102029; color: #f7fafb; font: 500 14px/1 Geist, ui-sans-serif, system-ui, sans-serif; cursor: pointer; transition: background-color 150ms, color 150ms, transform 150ms; } .ds-btn-primary:hover { background: #2a3d48; } .ds-btn-primary:active { transform: translateY(1px); } .ds-btn-primary:focus-visible { outline: 2px solid #102029; outline-offset: 2px; } .ds-btn-primary:disabled { background: #95abb8; color: #dde7ec; cursor: not-allowed; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Default button: Reserve, Book directly, supporting actions.",
+      "html": "<button class=\"ds-btn-secondary\">Reserve</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 16px; border: 0; border-radius: 6px; background: #f7fafb; color: #102029; box-shadow: inset 0 0 0 1px #a7bac4; font: 500 14px/1 Geist, ui-sans-serif, system-ui, sans-serif; cursor: pointer; transition: background-color 150ms, transform 150ms; } .ds-btn-secondary:hover { background: #dde7ec; } .ds-btn-secondary:active { transform: translateY(1px); } .ds-btn-secondary:focus-visible { outline: 2px solid #102029; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Tertiary actions: Leave empty, Keep, open in Appointments.",
+      "html": "<button class=\"ds-btn-ghost\">Leave empty</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border: 0; border-radius: 6px; background: transparent; color: #344b58; font: 500 14px/1 Geist, ui-sans-serif, system-ui, sans-serif; cursor: pointer; transition: background-color 150ms, color 150ms; } .ds-btn-ghost:hover { background: #e0e8ec; color: #102029; } .ds-btn-ghost:focus-visible { outline: 2px solid #102029; outline-offset: 2px; }"
+    },
+    {
+      "name": "Panel Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "36px in-panel text field or select with label above.",
+      "html": "<label class=\"ds-field\">Reply window<input class=\"ds-input\" value=\"30 minutes per patient\"></label>",
+      "css": ".ds-field { display: grid; gap: 6px; font: 500 12px/1.33 Geist, ui-sans-serif, system-ui, sans-serif; color: #344b58; max-width: 280px; } .ds-input { height: 36px; padding: 0 10px; border: 1px solid #a7bac4; border-radius: 6px; background: #f7fafb; color: #102029; font: 400 14px Geist, ui-sans-serif, system-ui, sans-serif; outline: none; transition: border-color 150ms; } .ds-input::placeholder { color: #536b79; } .ds-input:focus { border-color: #102029; } .ds-input:focus-visible { outline: 2px solid #102029; outline-offset: 2px; }"
+    },
+    {
+      "name": "Film-Mount Nav",
+      "kind": "nav",
+      "refersTo": "nav-item",
+      "description": "Dark rail with Phosphor icons; active item fills d2.",
+      "html": "<nav class=\"ds-rail\"><a class=\"ds-nav ds-nav-active\" href=\"#\" aria-current=\"page\"><svg viewBox=\"0 0 256 256\" width=\"18\" height=\"18\" fill=\"currentColor\"><path d=\"M104 40H56a16 16 0 0 0-16 16v48a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16Zm96 0h-48a16 16 0 0 0-16 16v48a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16Zm-96 96H56a16 16 0 0 0-16 16v48a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16v-48a16 16 0 0 0-16-16Zm96 0h-48a16 16 0 0 0-16 16v48a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16v-48a16 16 0 0 0-16-16Z\"/></svg>Today</a><a class=\"ds-nav\" href=\"#\"><svg viewBox=\"0 0 256 256\" width=\"18\" height=\"18\" fill=\"currentColor\"><path d=\"M208 32h-24v-8a8 8 0 0 0-16 0v8H88v-8a8 8 0 0 0-16 0v8H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16ZM72 48v8a8 8 0 0 0 16 0v-8h80v8a8 8 0 0 0 16 0v-8h24v32H48V48Zm136 160H48V96h160v112Z\"/></svg>Appointments</a></nav>",
+      "css": ".ds-rail { display: grid; gap: 2px; width: 208px; padding: 20px 12px; background: #0f1c24; } .ds-nav { display: flex; align-items: center; gap: 12px; height: 36px; padding: 0 12px; border-radius: 6px; color: #9fb3bf; text-decoration: none; font: 400 14px Geist, ui-sans-serif, system-ui, sans-serif; transition: background-color 150ms, color 150ms; } .ds-nav:hover { background: #192a33; color: #dde7ec; } .ds-nav:focus-visible { outline: 2px solid #dde7ec; outline-offset: 2px; } .ds-nav-active, .ds-nav-active:hover { background: #2a3d48; color: #f7fafb; font-weight: 500; }"
+    },
+    {
+      "name": "Status Chips",
+      "kind": "chip",
+      "refersTo": "chip-live",
+      "description": "Offer status: live (amber), recovered (teal), settled (panel), queued (outlined).",
+      "html": "<span class=\"ds-chip ds-chip-live\">Awaiting reply</span> <span class=\"ds-chip ds-chip-rec\">Accepted</span> <span class=\"ds-chip ds-chip-set\">Declined</span> <span class=\"ds-chip ds-chip-q\">Queued</span>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; height: 20px; padding: 0 6px; border-radius: 3px; font: 500 11px Geist, ui-sans-serif, system-ui, sans-serif; } .ds-chip-live { background: #f6e7cf; color: #8a520d; box-shadow: inset 0 0 0 1px #d98e2b; } .ds-chip-rec { background: #dcf0eb; color: #0d7565; box-shadow: inset 0 0 0 1px #0d7565; } .ds-chip-set { background: #e0e8ec; color: #344b58; } .ds-chip-q { background: #f7fafb; color: #344b58; box-shadow: inset 0 0 0 1px #a7bac4; }"
+    },
+    {
+      "name": "Film Blocks",
+      "kind": "custom",
+      "refersTo": "film-states",
+      "description": "Signature state vocabulary for chair-time: booked, completed, open, offer out, reserved, lost, recovered.",
+      "html": "<div class=\"ds-book\"><div class=\"ds-blk ds-film\">Sunita Nair<small>Crown preparation</small></div><div class=\"ds-blk ds-past\">Ritu Sharma<small>Completed</small></div><div class=\"ds-blk ds-void\">Open <b>60 min</b><small>Cancelled: Rahul</small></div><div class=\"ds-blk ds-live\">Offer out <b>45 min</b><small>Cancelled: Aditya</small></div><div class=\"ds-blk ds-held\">Reserved<small>Walk-in</small></div><div class=\"ds-blk ds-lost\">Lost<small>Not filled in time</small></div><div class=\"ds-blk ds-rest\">Sneha Kulkarni<small>Recovered</small></div></div>",
+      "css": ".ds-book { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; padding: 12px; background: #eaf0f3; font-family: Geist, ui-sans-serif, system-ui, sans-serif; } .ds-blk { min-height: 44px; padding: 4px 8px; border-radius: 3px; font-size: 12px; font-weight: 500; transition: opacity 200ms, filter 200ms; } .ds-blk small { display: block; font-size: 11px; font-weight: 400; opacity: .8; } .ds-blk b { float: right; font: 400 11px 'Geist Mono', ui-monospace, monospace; opacity: .8; } .ds-film { background: #f7fafb; color: #102029; box-shadow: inset 0 0 0 1px #cad7de; } .ds-film:hover { box-shadow: inset 0 0 0 1px #cad7de, 0 1px 2px rgb(15 28 36 / .08), 0 8px 24px -12px rgb(15 28 36 / .28); } .ds-past { background: #dde7ec; color: #344b58; box-shadow: inset 0 0 0 1px #cad7de; } .ds-void { background-color: #192a33; background-image: repeating-linear-gradient(135deg, transparent 0 6px, rgb(221 231 236 / .11) 6px 7px); color: #dde7ec; } .ds-void:hover { filter: brightness(1.25); } .ds-live { background-color: #192a33; background-image: repeating-linear-gradient(135deg, transparent 0 6px, rgb(217 142 43 / .28) 6px 7px); color: #dde7ec; box-shadow: inset 0 0 0 1.5px #d98e2b; } .ds-held { background-color: #2a3d48; background-image: radial-gradient(rgb(221 231 236 / .16) 1px, transparent 1.2px); background-size: 6px 6px; color: #dde7ec; outline: 1.5px dashed #95abb8; outline-offset: -3px; } .ds-lost { background-color: #0f1c24; background-image: repeating-linear-gradient(135deg, transparent 0 5px, rgb(221 231 236 / .08) 5px 6px), repeating-linear-gradient(45deg, transparent 0 5px, rgb(221 231 236 / .08) 5px 6px); color: #9fb3bf; } .ds-rest { background: #fdfefe; color: #102029; box-shadow: inset 0 0 0 1.5px #0d7565, inset 4px 0 0 0 #0d7565; padding-left: 10px; } .ds-blk:focus-visible { outline: 2px solid #102029; outline-offset: 2px; }"
+    },
+    {
+      "name": "Readout Strip",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Metrics as one ruled strip with provenance caption; void, amber and restore cell tones.",
+      "html": "<section class=\"ds-strip\"><header><h2>Chair-time recovery</h2><p>Last 7 days. Estimates. Demo data.</p></header><dl><div class=\"ds-cell ds-cell-void\"><dt>Open this week</dt><dd><span>3</span><small>upcoming slots</small></dd></div><div class=\"ds-cell ds-cell-amber\"><dt>Offers sent</dt><dd><span>12</span><small>1 awaiting reply</small></dd></div><div class=\"ds-cell\"><dt>Fill rate</dt><dd><span>67%</span><small>6 filled, 3 lost</small></dd></div><div class=\"ds-cell ds-cell-rest\"><dt>Recovered</dt><dd><span>4.5 h</span><small>chair-hours</small></dd></div></dl></section>",
+      "css": ".ds-strip { background: #f7fafb; border-radius: 6px; box-shadow: inset 0 0 0 1px #cad7de; font-family: Geist, ui-sans-serif, system-ui, sans-serif; color: #102029; } .ds-strip header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; padding: 10px 16px; border-bottom: 1px solid #cad7de; } .ds-strip h2 { margin: 0; font-size: 14px; font-weight: 600; } .ds-strip header p { margin: 0; font-size: 12px; color: #536b79; } .ds-strip dl { display: grid; grid-template-columns: repeat(4, 1fr); margin: 0; } .ds-cell { position: relative; padding: 12px 16px; border-right: 1px solid #cad7de; } .ds-cell:last-child { border-right: 0; } .ds-cell dt { font-size: 12px; color: #344b58; } .ds-cell dd { margin: 4px 0 0; } .ds-cell span { display: block; font: 500 22px/1 'Geist Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; } .ds-cell small { display: block; margin-top: 6px; font-size: 12px; color: #536b79; } .ds-cell-void::before, .ds-cell-amber::before { content: ''; position: absolute; inset: 0 auto 0 0; width: 4px; } .ds-cell-void::before { background-color: #192a33; background-image: repeating-linear-gradient(135deg, transparent 0 6px, rgb(221 231 236 / .11) 6px 7px); } .ds-cell-amber::before { background: #d98e2b; } .ds-cell-amber span { color: #8a520d; } .ds-cell-rest span { color: #0d7565; }"
+    },
+    {
+      "name": "Segmented Choice",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Two to four mutually exclusive options in a panel-2 trough.",
+      "html": "<div class=\"ds-seg\"><label class=\"ds-seg-on\"><input type=\"radio\" name=\"m\" checked><b>All at once</b><span>First to accept gets it</span></label><label><input type=\"radio\" name=\"m\"><b>One at a time</b><span>In ranked order</span></label></div>",
+      "css": ".ds-seg { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; max-width: 360px; background: #e0e8ec; border-radius: 6px; font: 12px/1.33 Geist, ui-sans-serif, system-ui, sans-serif; } .ds-seg label { padding: 8px 12px; border-radius: 4px; color: #344b58; cursor: pointer; transition: color 150ms; } .ds-seg label:hover { color: #102029; } .ds-seg input { position: absolute; opacity: 0; width: 1px; height: 1px; } .ds-seg label:has(input:focus-visible) { outline: 2px solid #102029; } .ds-seg b { display: block; font-weight: 600; } .ds-seg span { display: block; color: #536b79; } .ds-seg-on { background: #f7fafb; color: #102029; box-shadow: inset 0 0 0 1px #a7bac4; }"
+    },
+    {
+      "name": "Toast",
+      "kind": "custom",
+      "refersTo": "toast",
+      "description": "Floating confirmation in ink with Lift; success check in restore-bright.",
+      "html": "<div class=\"ds-toast\" role=\"status\"><svg viewBox=\"0 0 256 256\" width=\"16\" height=\"16\" fill=\"#2fb39b\"><path d=\"M232.49 80.49l-128 128a12 12 0 0 1-17 0l-56-56a12 12 0 1 1 17-17L96 183 215.51 63.51a12 12 0 0 1 17 17Z\"/></svg><p>Booked Sneha Kulkarni into Chair 2, 3 pm.</p><button aria-label=\"Dismiss\">&times;</button></div>",
+      "css": ".ds-toast { display: flex; align-items: flex-start; gap: 12px; max-width: 28rem; padding: 12px 16px; border-radius: 6px; background: #102029; color: #f7fafb; font: 14px/1.43 Geist, ui-sans-serif, system-ui, sans-serif; box-shadow: 0 1px 2px rgb(15 28 36 / .08), 0 8px 24px -12px rgb(15 28 36 / .28); } .ds-toast svg { flex: none; margin-top: 2px; } .ds-toast p { flex: 1; margin: 0; } .ds-toast button { background: none; border: 0; color: inherit; opacity: .7; cursor: pointer; } .ds-toast button:hover { opacity: 1; } .ds-toast button:focus-visible { outline: 2px solid #dde7ec; outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Viewbox",
+    "overview": "ChairFill is a radiograph light panel with film clipped to it. The working ground is a cool, evenly lit panel; the navigation is the dark film-mount that holds it. Every piece of chair-time is a piece of film: booked time is dense and bright, and freed time is radiolucent, a dark void with a diagonal hatch. The product exists to turn voids back into film, so the most important thing on any screen is how much void there is and what is happening to it.\n\nThe system is an operate-mode tool for a front desk working between phone calls in daylight. It is light-only, dense, and tabular: readouts over cards, hairline rules over boxes, one tonal scale (the nine-step density ramp) over a decorative palette. Exactly two accents exist and both are semantic: safelight amber means an offer is out and waiting for a reply, and restoration teal means chair-time was recovered. Nothing else gets a hue. It is deliberately not a white KPI-card dashboard with a teal calendar.\n\nState is carried by material, not by colour alone. Open time is hatched, held time is dotted and dashed, lost time is cross-hatched, recovered time has a crisp teal edge and a left bar. A coordinator should be able to read the book in greyscale.",
+    "keyCharacteristics": [
+      "One 9-step density ramp (d0 to d8) is the only tonal scale; dark means empty, bright means booked.",
+      "Two semantic accents only: amber for live offers, teal for recovered time.",
+      "Hatch, dot and cross-hatch patterns encode state alongside colour.",
+      "Dark film-mount chrome (nav rail, mobile bar, phone sheet) around a lit panel ground.",
+      "Tabular readouts in Geist Mono; prose and labels in Geist; sentence case throughout.",
+      "Flat, hairline-ruled surfaces; shadow only for things that float."
+    ],
+    "rules": [
+      { "name": "The One Ramp Rule", "body": "Every neutral, every chart series that is not amber or teal, and every density mark comes from d0 to d8 or the named neutrals aliased from it. No new greys, no new hues.", "section": "colors" },
+      { "name": "The Safelight Rule", "body": "Amber means \"an offer is out and a patient has not answered yet\" and nothing else (the Demo data label is the single standing exception). When the offer resolves, the amber goes away.", "section": "colors" },
+      { "name": "The Recovery Rule", "body": "Teal means time that ChairFill recovered. Do not use it for generic success, links, primary actions or branding beyond the mark.", "section": "colors" },
+      { "name": "The Greyscale Test", "body": "Every state must remain distinguishable with colour removed: hatch, dots, dashes, cross-hatch, edge bars and text labels carry it.", "section": "colors" },
+      { "name": "The Instrument Rule", "body": "Geist Mono is for values only: times, durations, minutes, money, counts, scores, percentages. Never mono for labels, headings or prose. Always use the `.num` treatment (tabular figures) so columns align.", "section": "typography" },
+      { "name": "The Sentence Case Rule", "body": "No uppercase labels, no letter-spaced kickers or eyebrows above headings. A section is introduced by its title alone.", "section": "typography" },
+      { "name": "The Armature Rule", "body": "Time-based views show their grid. Gridlines are `rule` hairlines; the structure is visible, not implied.", "section": "layout" },
+      { "name": "The Lightbox Rule", "body": "Nothing on the lit panel casts a shadow at rest. If it floats (toast, sheet, popover, dialog), use Lift; otherwise use a hairline.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** draw open, held, lost, offered and recovered time with the film-block classes, so hatch, dots, dashes and edge bars carry state alongside colour.",
+      "**Do** keep amber strictly for offers awaiting a reply and teal strictly for recovered time; let both disappear when the state ends.",
+      "**Do** set every time, duration, minute count, money value, score and percentage in Geist Mono with tabular figures.",
+      "**Do** label estimates and synthetic data where the number appears (\"estimate\", \"Demo data\"), and show the Demo data badge on every data screen.",
+      "**Do** keep the grid armature visible on time-based views and foot each chair column with booked / capacity minutes.",
+      "**Do** build metric rows as one ruled strip divided by hairlines, with a provenance caption in the header.",
+      "**Do** use 6px for controls and containers, 3px for film blocks, chips and nodes.",
+      "**Do** dim siblings to 60% and ring the selection in 2px ink when something is focused.",
+      "**Do** respect reduced motion: no pulse, no rise, opacity-only transitions."
+    ],
+    "donts": [
+      "**Don't** introduce a new hue for charts, categories, channels or roles; step the density ramp instead.",
+      "**Don't** use red for lost or unfilled chair-time; danger is for errors and destructive actions.",
+      "**Don't** put KPI values in separate shadowed cards, or nest a bordered container inside another.",
+      "**Don't** add drop shadows to anything resting on the panel; Lift is for floating layers only.",
+      "**Don't** add uppercase, letter-spaced kickers or eyebrows above headings.",
+      "**Don't** use emoji or text glyphs as icons; use Phosphor `*Icon` components.",
+      "**Don't** add a dark theme or tint the panel ground; the scene is front-desk daylight.",
+      "**Don't** use mono for labels or prose, or a display size above 1.5rem inside the app.",
+      "**Don't** borrow the patient phone's large radii or round avatars for app UI."
+    ]
+  }
+}
